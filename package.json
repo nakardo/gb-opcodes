@@ -1,0 +1,37 @@
+{
+  "name": "gb-opcodes",
+  "version": "0.0.0",
+  "description": "generate gameboy opcodes table in JSON format",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "author": "Diego Acosta <diegonake@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "0.x.x",
+    "request": "2.x.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmacosta/gb-opcodes.git"
+  },
+  "keywords": [
+    "nintendo",
+    "gameboy",
+    "LR35902",
+    "opcodes",
+    "cpu",
+    "instructions",
+    "emulator"
+  ],
+  "bugs": {
+    "url": "https://github.com/dmacosta/gb-opcodes/issues"
+  },
+  "homepage": "https://github.com/dmacosta/gb-opcodes#readme"
+}
