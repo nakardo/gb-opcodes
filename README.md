@@ -4,9 +4,9 @@ This module borrows some bits from NewbiZ implementation in python which can be 
 
 ## Usage
 
-`$ npm start`
+`$ npm run gb-opcodes`
 
-Program output is on the [opcodes.json](https://github.com/dmacosta/gb-opcodes/blob/master/opcodes.json)
+Program output is also available on the [opcodes.json](https://github.com/dmacosta/gb-opcodes/blob/master/opcodes.json)
 file included on this repo.
 
 ## References

@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 'use strict';
 
 const fs = require('fs');
@@ -54,7 +55,7 @@ const URL = 'http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html';
 request(URL, function (err, response, body) {
 
     if (err) {
-        console.error(`Request to url: ${URL} failed`, err);
+        console.error(err.message);
         process.exit(1);
     }
 

@@ -2,7 +2,6 @@
   "name": "gb-opcodes",
   "version": "2.0.0",
   "description": "generate gameboy opcodes table in JSON format",
-  "main": "index.js",
   "engines": {
     "node": ">= 4.0.0"
   },
@@ -13,9 +12,11 @@
     "request": "2.x.x"
   },
   "devDependencies": {},
+  "bin": {
+    "gb-opcodes": "./bin/index.js"
+  },
   "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gb-opcodes": "./bin/index.js"
   },
   "repository": {
     "type": "git",
