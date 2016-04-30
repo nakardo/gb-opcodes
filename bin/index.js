@@ -71,5 +71,5 @@ request(URL, function (err, response, body) {
         return p;
     }, {});
 
-    process.stdout.write(JSON.stringify(data, null, 4));
+    process.stdout.write(JSON.stringify(data, null, 2));
 });
