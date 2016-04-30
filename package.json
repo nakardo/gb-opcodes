@@ -8,7 +8,9 @@
   "author": "Diego Acosta <diegonake@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "JSONStream": "^1.1.1",
     "cheerio": "0.x.x",
+    "node-fetch": "^1.5.1",
     "request": "2.x.x"
   },
   "devDependencies": {},
