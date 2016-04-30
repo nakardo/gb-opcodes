@@ -50,7 +50,6 @@ const parseTable = ($, table) => {
 // - https://github.com/NewbiZ/gbemu/tree/master/scripts
 
 const URL = 'http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html';
-const FILE_OUT = './opcodes.json';
 
 request(URL, function (err, response, body) {
 
@@ -60,18 +59,16 @@ request(URL, function (err, response, body) {
     }
 
     const $ = cheerio.load(body);
-    const tables = $('table').slice(0, 2);
+    const tables = $('table').splice(0, 2);
 
-    const insts = {
-        unprefixed: parseTable($, tables[0]),
-        cbprefixed: parseTable($, tables[1])
-    };
+    const data = [
+        'unprefixed',
+        'cbprefixed'
+    ]
+    .reduce((p, c, i) => {
+        p[c] = parseTable($, tables[i]);
+        return p;
+    }, {});
 
-    fs.writeFile(FILE_OUT, JSON.stringify(insts, null, 4), (err) => {
-        if (err) {
-            console.error(`Unable to write file on ${FILE_OUT}`, err);
-            process.exit(1);
-        }
-        console.info(`Opcodes written on ${FILE_OUT}`);
-    });
+    process.stdout.write(JSON.stringify(data, null, 4));
 });
