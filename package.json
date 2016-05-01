@@ -1,6 +1,6 @@
 {
   "name": "gb-opcodes",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "generate gameboy opcodes table in JSON format",
   "engines": {
     "node": ">= 4.0.0"
