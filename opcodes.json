@@ -1,5 +1,5 @@
 [
-{"opcode":"0x0","mnemonic":"NOP","bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0x0","mnemonic":"NOP","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0x1","mnemonic":"LD","operands":["BC","d16"],"bytes":3,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -13,7 +13,7 @@
 ,
 {"opcode":"0x6","mnemonic":"LD","operands":["B","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x7","mnemonic":"RLCA","bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
+{"opcode":"0x7","mnemonic":"RLCA","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
 ,
 {"opcode":"0x8","mnemonic":"LD","operands":["(a16)","SP"],"bytes":3,"cycles":20,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -29,7 +29,7 @@
 ,
 {"opcode":"0xe","mnemonic":"LD","operands":["C","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0xf","mnemonic":"RRCA","bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
+{"opcode":"0xf","mnemonic":"RRCA","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
 ,
 {"opcode":"0x10","mnemonic":"STOP","operands":["0"],"bytes":2,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -45,7 +45,7 @@
 ,
 {"opcode":"0x16","mnemonic":"LD","operands":["D","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x17","mnemonic":"RLA","bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
+{"opcode":"0x17","mnemonic":"RLA","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
 ,
 {"opcode":"0x18","mnemonic":"JR","operands":["r8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -61,7 +61,7 @@
 ,
 {"opcode":"0x1e","mnemonic":"LD","operands":["E","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x1f","mnemonic":"RRA","bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
+{"opcode":"0x1f","mnemonic":"RRA","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["0","0","0","C"]}
 ,
 {"opcode":"0x20","mnemonic":"JR","operands":["NZ","r8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -77,7 +77,7 @@
 ,
 {"opcode":"0x26","mnemonic":"LD","operands":["H","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x27","mnemonic":"DAA","bytes":1,"cycles":4,"flagsZNHC":["Z","-","0","C"]}
+{"opcode":"0x27","mnemonic":"DAA","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["Z","-","0","C"]}
 ,
 {"opcode":"0x28","mnemonic":"JR","operands":["Z","r8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -93,7 +93,7 @@
 ,
 {"opcode":"0x2e","mnemonic":"LD","operands":["L","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x2f","mnemonic":"CPL","bytes":1,"cycles":4,"flagsZNHC":["-","1","1","-"]}
+{"opcode":"0x2f","mnemonic":"CPL","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","1","1","-"]}
 ,
 {"opcode":"0x30","mnemonic":"JR","operands":["NC","r8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -109,7 +109,7 @@
 ,
 {"opcode":"0x36","mnemonic":"LD","operands":["(HL)","d8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x37","mnemonic":"SCF","bytes":1,"cycles":4,"flagsZNHC":["-","0","0","1"]}
+{"opcode":"0x37","mnemonic":"SCF","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","0","0","1"]}
 ,
 {"opcode":"0x38","mnemonic":"JR","operands":["C","r8"],"bytes":2,"cycles":12,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -125,7 +125,7 @@
 ,
 {"opcode":"0x3e","mnemonic":"LD","operands":["A","d8"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x3f","mnemonic":"CCF","bytes":1,"cycles":4,"flagsZNHC":["-","0","0","C"]}
+{"opcode":"0x3f","mnemonic":"CCF","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","0","0","C"]}
 ,
 {"opcode":"0x40","mnemonic":"LD","operands":["B","B"],"bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -235,7 +235,7 @@
 ,
 {"opcode":"0x75","mnemonic":"LD","operands":["(HL)","L"],"bytes":1,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0x76","mnemonic":"HALT","bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0x76","mnemonic":"HALT","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0x77","mnemonic":"LD","operands":["(HL)","A"],"bytes":1,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -401,7 +401,7 @@
 ,
 {"opcode":"0xc8","mnemonic":"RET","operands":["Z"],"bytes":1,"cycles":20,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0xc9","mnemonic":"RET","bytes":1,"cycles":16,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0xc9","mnemonic":"RET","operands":[],"bytes":1,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0xca","mnemonic":"JP","operands":["Z","a16"],"bytes":3,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -431,7 +431,7 @@
 ,
 {"opcode":"0xd8","mnemonic":"RET","operands":["C"],"bytes":1,"cycles":20,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0xd9","mnemonic":"RETI","bytes":1,"cycles":16,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0xd9","mnemonic":"RETI","operands":[],"bytes":1,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0xda","mnemonic":"JP","operands":["C","a16"],"bytes":3,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -469,7 +469,7 @@
 ,
 {"opcode":"0xf2","mnemonic":"LD","operands":["A","(C)"],"bytes":2,"cycles":8,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0xf3","mnemonic":"DI","bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0xf3","mnemonic":"DI","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0xf5","mnemonic":"PUSH","operands":["AF"],"bytes":1,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
@@ -483,7 +483,7 @@
 ,
 {"opcode":"0xfa","mnemonic":"LD","operands":["A","(a16)"],"bytes":3,"cycles":16,"flagsZNHC":["-","-","-","-"]}
 ,
-{"opcode":"0xfb","mnemonic":"EI","bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
+{"opcode":"0xfb","mnemonic":"EI","operands":[],"bytes":1,"cycles":4,"flagsZNHC":["-","-","-","-"]}
 ,
 {"opcode":"0xfe","mnemonic":"CP","operands":["d8"],"bytes":2,"cycles":8,"flagsZNHC":["Z","1","H","C"]}
 ,
