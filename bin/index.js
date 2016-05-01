@@ -1,7 +1,6 @@
 #! /usr/bin/env node
 'use strict';
 
-const fs = require('fs');
 const request = require('request');
 const cheerio = require('cheerio');
 const stream = require('JSONStream').stringify(false);
@@ -9,7 +8,7 @@ const stream = require('JSONStream').stringify(false);
 const URL = 'http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html';
 
 
-const parseContent = (i, elem, tableIndex) => {
+function parseContent(i, elem, tableIndex) {
 
     if (elem.length !== 3) return null;
 
@@ -27,7 +26,7 @@ const parseContent = (i, elem, tableIndex) => {
     };
 };
 
-const parseTable = ($, table, index) => {
+function parseTable($, table, index) {
 
     $('tr:nth-of-type(n+2)', table)
         .map((i, elem) => $('td:nth-of-type(n+2)', elem).get())
